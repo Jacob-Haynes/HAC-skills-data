@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NLP-data-exploration.iml" filepath="$PROJECT_DIR$/.idea/NLP-data-exploration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HAC-skills-data.iml" filepath="$PROJECT_DIR$/.idea/HAC-skills-data.iml" />
     </modules>
   </component>
 </project>
