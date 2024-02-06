@@ -1,0 +1,94 @@
+2024-02-05 14:44:31 [INFO] Question: Can you return this dataframe but with the 13th and 18th columns rewritten as standardised skills with a maximum of 30 unique skills accross all lines?
+2024-02-05 14:44:32 [INFO] Running PandasAI with openai LLM...
+2024-02-05 14:44:32 [INFO] Prompt ID: 59ebf1d2-7b15-43de-8bb4-43874b2bf87a
+2024-02-05 14:44:32 [INFO] Executing Step 0: CacheLookup
+2024-02-05 14:44:32 [INFO] Executing Step 1: PromptGeneration
+2024-02-05 14:44:32 [INFO] Using prompt: <dataframe>
+dfs[0]:246x27
+ID,Start time,Completion time,Email,Name,Last modified time,What is your forename?,What is your Surname?,What is your rank?,Which Sub unit are you in?,What sector of business do you work in?,What is your job title?,"List the key skills required to do your role? (To help us analyse and format the data, please place a comma after each skill.  For example, if you put Marketing Manager above you might put in this...",If you have a professional qualification please list it here.,How many years experience do you have in this role?,Approximately how many people work at your company?,"If there was a requirement from the MOD, would you be prepared to use your civilian skills in support of defence?","Which of your civilian skills do you think could be of use in a military context?
+(This could be your civilian work, a qualification or skill you have outside of work, a hobby, a language, or simp...",How many foreign languages do you speak?,"If you speak more than one foreign language, which one are you most proficient at? Otherwise please note below the foreign language you speak?","How well do you speak this language 
+1 - Beginner
+2 - Intermediate
+3 - Advanced
+4 - Fluent
+5 - Native","Are you fluent in any other languages, if so which one?",A short tour (<3 months) utilising your military skillset?,A short tour (<3 months) utilising your civilian skill set?,A longer tour (6-12 months) using your military skill set?,A longer tour (6-12 months) using your military skill set?2,"Project work (<1month) using RSD's (i.e not mobilised, using civilian leave) using your civilian skillset?"
+8,1/24/24 18:04:58,1/24/24 18:07:11,anonymous,,,James ,Cottrill,Trooper,1 Sqn,Technology,Data Engineer/Software...,"Data Engineering, Data...","GCP cloud architect, G...",6-10 years,1-10,Yes,I run a Google cloud p...,One,French,3.0,No,Yes,Yes,Not in the next 12 months,Not in the next 12 months,Yes
+7,1/24/24 17:36:08,1/24/24 17:38:06,anonymous,,,Thomas,Cardwell,Captain,HQ Sqn,Civil Servant,Regt Ops support Offic...,"Recruiting, Operations...",BA Hospitality Managem...,10+ years,251+,Yes,All...,None,,,,Yes,Yes,Yes,Yes,Yes
+6,1/24/24 17:20:47,1/24/24 17:22:52,anonymous,,,Samuel,Norman,Sergeant,A Bty,Technology,Chief of Staff...,"Problem solving, opera...",No...,6-10 years,50-250,Yes,"Problem sovling, relat...",None,,,,Yes,Yes,Yes,Yes,Yes
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: Can you return this dataframe but with the 13th and 18th columns rewritten as standardised skills with a maximum of 30 unique skills accross all lines?
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2024-02-05 14:44:32 [INFO] Executing Step 2: CodeGenerator
+2024-02-05 14:44:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-02-05 14:44:32 [INFO] Retrying request to /chat/completions in 0.757165 seconds
+2024-02-05 14:44:33 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-02-05 14:44:33 [INFO] Retrying request to /chat/completions in 1.787826 seconds
+2024-02-05 14:44:35 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-02-05 14:44:35 [ERROR] Pipeline failed on step 2: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-02-05 14:45:57 [INFO] Question: Can you return this dataframe but with the 13th and 18th columns rewritten as standardised skills with a maximum of 30 unique skills accross all lines?
+2024-02-05 14:45:57 [INFO] Running PandasAI with openai LLM...
+2024-02-05 14:45:57 [INFO] Prompt ID: 313f3846-308d-41b6-b47d-c217c0b11a1f
+2024-02-05 14:45:57 [INFO] Executing Step 0: CacheLookup
+2024-02-05 14:45:57 [INFO] Executing Step 1: PromptGeneration
+2024-02-05 14:45:57 [INFO] Using prompt: <dataframe>
+dfs[0]:246x27
+ID,Start time,Completion time,Email,Name,Last modified time,What is your forename?,What is your Surname?,What is your rank?,Which Sub unit are you in?,What sector of business do you work in?,What is your job title?,"List the key skills required to do your role? (To help us analyse and format the data, please place a comma after each skill.  For example, if you put Marketing Manager above you might put in this...",If you have a professional qualification please list it here.,How many years experience do you have in this role?,Approximately how many people work at your company?,"If there was a requirement from the MOD, would you be prepared to use your civilian skills in support of defence?","Which of your civilian skills do you think could be of use in a military context?
+(This could be your civilian work, a qualification or skill you have outside of work, a hobby, a language, or simp...",How many foreign languages do you speak?,"If you speak more than one foreign language, which one are you most proficient at? Otherwise please note below the foreign language you speak?","How well do you speak this language 
+1 - Beginner
+2 - Intermediate
+3 - Advanced
+4 - Fluent
+5 - Native","Are you fluent in any other languages, if so which one?",A short tour (<3 months) utilising your military skillset?,A short tour (<3 months) utilising your civilian skill set?,A longer tour (6-12 months) using your military skill set?,A longer tour (6-12 months) using your military skill set?2,"Project work (<1month) using RSD's (i.e not mobilised, using civilian leave) using your civilian skillset?"
+8,1/24/24 18:04:58,1/24/24 18:07:11,anonymous,,,James ,Cottrill,Trooper,1 Sqn,Technology,Data Engineer/Software...,"Data Engineering, Data...","GCP cloud architect, G...",6-10 years,1-10,Yes,I run a Google cloud p...,One,French,3.0,No,Yes,Yes,Not in the next 12 months,Not in the next 12 months,Yes
+7,1/24/24 17:36:08,1/24/24 17:38:06,anonymous,,,Thomas,Cardwell,Captain,HQ Sqn,Civil Servant,Regt Ops support Offic...,"Recruiting, Operations...",BA Hospitality Managem...,10+ years,251+,Yes,All...,None,,,,Yes,Yes,Yes,Yes,Yes
+6,1/24/24 17:20:47,1/24/24 17:22:52,anonymous,,,Samuel,Norman,Sergeant,A Bty,Technology,Chief of Staff...,"Problem solving, opera...",No...,6-10 years,50-250,Yes,"Problem sovling, relat...",None,,,,Yes,Yes,Yes,Yes,Yes
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: Can you return this dataframe but with the 13th and 18th columns rewritten as standardised skills with a maximum of 30 unique skills accross all lines?
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2024-02-05 14:45:57 [INFO] Executing Step 2: CodeGenerator
+2024-02-05 14:45:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-02-05 14:45:57 [INFO] Retrying request to /chat/completions in 0.830935 seconds
+2024-02-05 14:45:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-02-05 14:45:58 [INFO] Retrying request to /chat/completions in 1.657730 seconds
+2024-02-05 14:46:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-02-05 14:46:00 [ERROR] Pipeline failed on step 2: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
